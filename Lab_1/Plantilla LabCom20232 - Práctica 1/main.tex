@@ -1,0 +1,111 @@
+\documentclass{journal}[IEEEtran, twocolumn]             % No modificar
+
+% PASO 1. Reemplace "Práctica 1" por el número de la práctica que corresponda
+\newcommand{\dochead}{Práctica 1}     
+
+% PASO 2. Reemplace "TÍTULO PRÁCTICA" por el título de la práctica que corresponda.
+\newcommand{\docsubhead}{TÍTULO PRÁCTICA}  
+
+% PASO 3. Reemplace "B1A - 02" por el grupo de la asignatura y el número de su grupo de laboratorio
+\newcommand{\teamname}{B1A - 02}     
+
+% PASO 4. OPCIONAL: Reemplace "\docsubhead \docsubhead" por el título del documento en caso de requerirse.
+\newcommand{\titulo}{\dochead: \docsubhead}      
+
+% PASO 5. Reemplace "31 de diciembre de 2030" por la fecha de su documento
+\newcommand{\fecha}{31 de diciembre de 2030}      
+
+\input{./plantilla.tex}             % No modificar
+
+
+\begin{document}                    % No modificar
+
+\title{\textbf{\titulo}}            % No modificar
+
+% PASO 6. Agregar aquí el nombre y código de los autores.  
+\author{
+PRIMER INTEGRANTE - código \\
+SEGUNDO INTEGRANTE - código
+}
+
+\affil{\small{Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones} \\ % No modificar
+\small{Universidad Industrial de Santander}} % No modificar
+
+\date{\fecha}                       % No modificar
+
+\maketitle                          % No modificar
+\thispagestyle{fancy}               % No modificar
+
+%---------------------------------------------------------------
+% PASO 7. **..**...****INICIE SU DOCUMENTO DESDE AQUI***...**...
+%%%%% A PARTIR DE AQUÍ EDITE EL DOCUMENTO PARA AGREGAR TODO EL CONTENIDO REQUERIDO PARA EL ENTREGABLE CORRESPONDIENTE
+%%%%  Todo el contenido a partir de este punto es SOLAMENTE ILUSTRATIVO.
+%
+% Para sus imformes, BORRE TODO el contenido de aquí en adelante  EXCEPTO la última línea que contiene el comando: \end{document}
+
+\color{red}
+\begin{center}
+\textbf{Condiciones de entrega: }
+
+\begin{enumerate}
+\item Borrar todas las letras que se encuentran en color rojo. (condiciones de entrega) 
+\item El trabajo debe ser original; se puede extraer información de otros trabajos (libros, artículos, blog, entre otros), pero debe consignarse con sus propias palabras. En caso de PLAGIO será penalizado con disminución de la nota hasta con la remisión de su caso al consejo de escuela. En caso de requerir información de otro trabajo se debe referenciar. 
+\item Borrar las preguntas realizadas por parte del profesor en el documento. Deben iniciar los párrafos a partir de las respuestas realizadas, es decir  borre la pregunta y escriba la respuesta en el orden que estan formuladas.
+\end{enumerate}
+
+\end{center}
+\color{black}
+
+\begin{multicols}{2}
+
+\begin{abstract}
+    El resumen de la práctica no debe contener más de 100 palabras, debe ser conciso y brindar una idea clara sobre el trabajo realizado y sus conclusiones.
+
+ \textit{\textbf{Palabras clave: }} Teorema de Nyquist, muestreo, interpolación, diezmado
+\end{abstract}
+
+\section{Introducción}
+
+Cree un párrafo donde se responda las siguientes preguntas. Desde su experiencia describa:
+\begin{itemize}
+    \item ¿Qué tan importante es la teoría de muestreo en el procesamiento de señales dentro del laboratorio de Comunicaciones? 
+    \item ¿Cómo visualiza el potencial de GNURADIO en el laboratorio de comunicaciones?
+    \item ¿Qué sucede a cualquier señal cuando se alcanza el límite de Nyquist?
+    \item ¿Qué tan alta debe ser la relación de muestreo entre la frecuencia de muestreo y la frecuencia de la señal para visualizar la señal correctamente? ¡Existe alguna recomendación desde la practica?
+    \item ¿Defina el proceso de interpolado? ¿Cuándo es importante interpolar una señal?
+    \item ¿Defina el proceso de diezmado? ¿Cuándo es importante diezmar una señal?
+    \item ¿Qué pasa cuando se asigna una frecuencia de muestreo superior al limite de Nyquist?
+    \item ¿Cuales son las ventajas de estudiar señales de audio en procesos de interpolación y diezmado? Desde la experiencia cuales son los principlaes aportes a us trabajo realizado. 
+\end{itemize}
+
+\section{Procedimiento}
+\begin{itemize}
+    \item ¿Describa el uso del bloque THROTTLE en GNU Radio y por qué es esencial en los flujogramas usados?
+    \item Describa la información obtenida al usar el bloque QT GUI frequency SINK, agregue una imagen donde apoye sus argumentos.
+    \item ¿Cual es el significado de los colores en los módulos de GNU-Radio?
+    \item ¿Por qué al interpolar una señal en GNURADIO su frecuencia disminuye y en cuales  situaciones de la práctica fue útil usarlas?
+    \item ¿Que establece el teorema de Nyquist y como se relaciona con el ancho de banda de la señal?
+    
+    \item ¿Describa la importancia de los filtros pasabajas en los sistemas implementados en GNU Radio? ¿Cual es el limite de la frecuencia de corte en función de la frecuencia de muestreo?  ¿en cuales casos se hace importante usar un filtro pasa banda?
+    \item ¿Describa la importancia de los filtros pasa banda en los sistemas implementados en GNU Radio? ¿Cuales son los limites de la frecuencias de corte en función de la frecuencia de muestreo? ¿en cuales casos se hace importante usar un filtro pasa banda?
+    \item ¿Describa la importancia de los filtros pasa altas en los sistemas implementados en GNU Radio? ¿en cuales casos se hace importante usar un filtro pasa altas?
+    
+    \item ¿Por qué es importante visualizar simultaneamente las señales en el dominio del tiempo y frecuencia?
+    \item ¿Qué le sucede a una señal de audio cuando no se respeta el teorema de Nyquist?
+    \item Describa las ventajas de experimentar un Ecualizador desarrollado con GNURadio. Describa las aplicaciones potenciales de esta herramienta
+\end{itemize}
+
+\section{Conclusiones}
+Debe sintetizar desde su perspectiva los principales aportes del trabajo, puntos relevantes de la práctica de laboratorio. Tenga en cuenta que no se debe repetir lo que ya está consignado en el documento.
+
+Cree las referencias en el archivo "bibliografia.bib", y use el comando \texttt{\textbackslash cite} para llamarlas.
+
+Ejemplo 1: esta es la citación de un trabajo de Schneider y Samaniego \cite{articulo1}.
+Ejemplo 2: esta es una referencia a una página web: \cite{referencia2} 
+
+% NO MODIFIQUE NI ELIMINE ESTA PARTE PARA QUE LE APAREZCAN LAS REFERENCIAS
+\bibliographystyle{IEEEtran}
+\bibliography{bibliografia.bib}
+
+\end{multicols}
+\end{document}
